@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65BDCE101FD005F900ABE87E /* Broccoli.h in Headers */ = {isa = PBXBuildFile; fileRef = 65BDCE0E1FD005F900ABE87E /* Broccoli.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65BDCE1D1FD0060D00ABE87E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE1C1FD0060D00ABE87E /* AppDelegate.swift */; };
+		65BDCE1F1FD0060D00ABE87E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE1E1FD0060D00ABE87E /* ViewController.swift */; };
+		65BDCE221FD0060D00ABE87E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BDCE201FD0060D00ABE87E /* Main.storyboard */; };
+		65BDCE241FD0060D00ABE87E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BDCE231FD0060D00ABE87E /* Assets.xcassets */; };
+		65BDCE271FD0060D00ABE87E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BDCE251FD0060D00ABE87E /* LaunchScreen.storyboard */; };
+		65BDCE311FD0064400ABE87E /* UserDefaults+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE2D1FD0064400ABE87E /* UserDefaults+Name.swift */; };
+		65BDCE331FD0064400ABE87E /* CKRecordConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE2F1FD0064400ABE87E /* CKRecordConvertible.swift */; };
+		65BDCE341FD0064400ABE87E /* SyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE301FD0064400ABE87E /* SyncEngine.swift */; };
+		65BDCE371FD0066100ABE87E /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE361FD0066000ABE87E /* GoalsViewController.swift */; };
+		65BDCE391FD006D600ABE87E /* Broccoli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE381FD006D600ABE87E /* Broccoli.swift */; };
+		65BDCE401FD0079600ABE87E /* BroccoliDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE3B1FD0079600ABE87E /* BroccoliDemo.xcdatamodeld */; };
+		65BDCE411FD0079600ABE87E /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE3D1FD0079600ABE87E /* Goal+CoreDataClass.swift */; };
+		65BDCE421FD0079600ABE87E /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE3E1FD0079600ABE87E /* Goal+CoreDataProperties.swift */; };
+		65BDCE431FD0079600ABE87E /* Goal+Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE3F1FD0079600ABE87E /* Goal+Cloud.swift */; };
+		65BDCE441FD007A600ABE87E /* Broccoli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BDCE0B1FD005F900ABE87E /* Broccoli.framework */; };
+		65BDCE451FD007A600ABE87E /* Broccoli.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65BDCE0B1FD005F900ABE87E /* Broccoli.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65BDCE4C1FD008FB00ABE87E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BDCE4B1FD008FB00ABE87E /* CloudKit.framework */; };
+		65BDCE4E1FD00EC700ABE87E /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE4D1FD00EC700ABE87E /* GoalCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65BDCE461FD007A600ABE87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65BDCE021FD005F900ABE87E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65BDCE0A1FD005F900ABE87E;
+			remoteInfo = Broccoli;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65BDCE481FD007A700ABE87E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65BDCE451FD007A600ABE87E /* Broccoli.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		65BDCE0B1FD005F900ABE87E /* Broccoli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Broccoli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65BDCE0E1FD005F900ABE87E /* Broccoli.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Broccoli.h; sourceTree = "<group>"; };
+		65BDCE0F1FD005F900ABE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65BDCE1A1FD0060D00ABE87E /* Broccoli-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Broccoli-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65BDCE1C1FD0060D00ABE87E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65BDCE1E1FD0060D00ABE87E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65BDCE211FD0060D00ABE87E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65BDCE231FD0060D00ABE87E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65BDCE261FD0060D00ABE87E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65BDCE281FD0060D00ABE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65BDCE2D1FD0064400ABE87E /* UserDefaults+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Name.swift"; sourceTree = "<group>"; };
+		65BDCE2F1FD0064400ABE87E /* CKRecordConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKRecordConvertible.swift; sourceTree = "<group>"; };
+		65BDCE301FD0064400ABE87E /* SyncEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncEngine.swift; sourceTree = "<group>"; };
+		65BDCE361FD0066000ABE87E /* GoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		65BDCE381FD006D600ABE87E /* Broccoli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Broccoli.swift; sourceTree = "<group>"; };
+		65BDCE3C1FD0079600ABE87E /* BroccoliDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BroccoliDemo.xcdatamodel; sourceTree = "<group>"; };
+		65BDCE3D1FD0079600ABE87E /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		65BDCE3E1FD0079600ABE87E /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		65BDCE3F1FD0079600ABE87E /* Goal+Cloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Goal+Cloud.swift"; sourceTree = "<group>"; };
+		65BDCE491FD008F900ABE87E /* Broccoli-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Broccoli-Demo.entitlements"; sourceTree = "<group>"; };
+		65BDCE4B1FD008FB00ABE87E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		65BDCE4D1FD00EC700ABE87E /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65BDCE071FD005F900ABE87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BDCE171FD0060D00ABE87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BDCE441FD007A600ABE87E /* Broccoli.framework in Frameworks */,
+				65BDCE4C1FD008FB00ABE87E /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65BDCE011FD005F900ABE87E = {
+			isa = PBXGroup;
+			children = (
+				65BDCE0D1FD005F900ABE87E /* Broccoli */,
+				65BDCE1B1FD0060D00ABE87E /* Broccoli-Demo */,
+				65BDCE0C1FD005F900ABE87E /* Products */,
+				65BDCE4A1FD008FB00ABE87E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		65BDCE0C1FD005F900ABE87E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65BDCE0B1FD005F900ABE87E /* Broccoli.framework */,
+				65BDCE1A1FD0060D00ABE87E /* Broccoli-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65BDCE0D1FD005F900ABE87E /* Broccoli */ = {
+			isa = PBXGroup;
+			children = (
+				65BDCE2C1FD0063400ABE87E /* Sources */,
+				65BDCE0E1FD005F900ABE87E /* Broccoli.h */,
+				65BDCE0F1FD005F900ABE87E /* Info.plist */,
+			);
+			path = Broccoli;
+			sourceTree = "<group>";
+		};
+		65BDCE1B1FD0060D00ABE87E /* Broccoli-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				65BDCE491FD008F900ABE87E /* Broccoli-Demo.entitlements */,
+				65BDCE3A1FD0079600ABE87E /* CoreData */,
+				65BDCE351FD0064A00ABE87E /* Supporting Files */,
+				65BDCE1C1FD0060D00ABE87E /* AppDelegate.swift */,
+				65BDCE361FD0066000ABE87E /* GoalsViewController.swift */,
+				65BDCE4D1FD00EC700ABE87E /* GoalCell.swift */,
+				65BDCE201FD0060D00ABE87E /* Main.storyboard */,
+			);
+			path = "Broccoli-Demo";
+			sourceTree = "<group>";
+		};
+		65BDCE2C1FD0063400ABE87E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				65BDCE381FD006D600ABE87E /* Broccoli.swift */,
+				65BDCE301FD0064400ABE87E /* SyncEngine.swift */,
+				65BDCE2F1FD0064400ABE87E /* CKRecordConvertible.swift */,
+				65BDCE2D1FD0064400ABE87E /* UserDefaults+Name.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		65BDCE351FD0064A00ABE87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65BDCE1E1FD0060D00ABE87E /* ViewController.swift */,
+				65BDCE231FD0060D00ABE87E /* Assets.xcassets */,
+				65BDCE251FD0060D00ABE87E /* LaunchScreen.storyboard */,
+				65BDCE281FD0060D00ABE87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65BDCE3A1FD0079600ABE87E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				65BDCE3B1FD0079600ABE87E /* BroccoliDemo.xcdatamodeld */,
+				65BDCE3D1FD0079600ABE87E /* Goal+CoreDataClass.swift */,
+				65BDCE3E1FD0079600ABE87E /* Goal+CoreDataProperties.swift */,
+				65BDCE3F1FD0079600ABE87E /* Goal+Cloud.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		65BDCE4A1FD008FB00ABE87E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65BDCE4B1FD008FB00ABE87E /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65BDCE081FD005F900ABE87E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BDCE101FD005F900ABE87E /* Broccoli.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		65BDCE0A1FD005F900ABE87E /* Broccoli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65BDCE131FD005F900ABE87E /* Build configuration list for PBXNativeTarget "Broccoli" */;
+			buildPhases = (
+				65BDCE061FD005F900ABE87E /* Sources */,
+				65BDCE071FD005F900ABE87E /* Frameworks */,
+				65BDCE081FD005F900ABE87E /* Headers */,
+				65BDCE091FD005F900ABE87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Broccoli;
+			productName = Broccoli;
+			productReference = 65BDCE0B1FD005F900ABE87E /* Broccoli.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65BDCE191FD0060D00ABE87E /* Broccoli-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65BDCE291FD0060D00ABE87E /* Build configuration list for PBXNativeTarget "Broccoli-Demo" */;
+			buildPhases = (
+				65BDCE161FD0060D00ABE87E /* Sources */,
+				65BDCE171FD0060D00ABE87E /* Frameworks */,
+				65BDCE181FD0060D00ABE87E /* Resources */,
+				65BDCE481FD007A700ABE87E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65BDCE471FD007A600ABE87E /* PBXTargetDependency */,
+			);
+			name = "Broccoli-Demo";
+			productName = "Broccoli-Demo";
+			productReference = 65BDCE1A1FD0060D00ABE87E /* Broccoli-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65BDCE021FD005F900ABE87E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "ZHOU DENGFENG DEREK";
+				TargetAttributes = {
+					65BDCE0A1FD005F900ABE87E = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					65BDCE191FD0060D00ABE87E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 65BDCE051FD005F900ABE87E /* Build configuration list for PBXProject "Broccoli" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65BDCE011FD005F900ABE87E;
+			productRefGroup = 65BDCE0C1FD005F900ABE87E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65BDCE0A1FD005F900ABE87E /* Broccoli */,
+				65BDCE191FD0060D00ABE87E /* Broccoli-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65BDCE091FD005F900ABE87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BDCE181FD0060D00ABE87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BDCE271FD0060D00ABE87E /* LaunchScreen.storyboard in Resources */,
+				65BDCE241FD0060D00ABE87E /* Assets.xcassets in Resources */,
+				65BDCE221FD0060D00ABE87E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65BDCE061FD005F900ABE87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BDCE391FD006D600ABE87E /* Broccoli.swift in Sources */,
+				65BDCE331FD0064400ABE87E /* CKRecordConvertible.swift in Sources */,
+				65BDCE311FD0064400ABE87E /* UserDefaults+Name.swift in Sources */,
+				65BDCE341FD0064400ABE87E /* SyncEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BDCE161FD0060D00ABE87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BDCE411FD0079600ABE87E /* Goal+CoreDataClass.swift in Sources */,
+				65BDCE1F1FD0060D00ABE87E /* ViewController.swift in Sources */,
+				65BDCE421FD0079600ABE87E /* Goal+CoreDataProperties.swift in Sources */,
+				65BDCE1D1FD0060D00ABE87E /* AppDelegate.swift in Sources */,
+				65BDCE4E1FD00EC700ABE87E /* GoalCell.swift in Sources */,
+				65BDCE371FD0066100ABE87E /* GoalsViewController.swift in Sources */,
+				65BDCE431FD0079600ABE87E /* Goal+Cloud.swift in Sources */,
+				65BDCE401FD0079600ABE87E /* BroccoliDemo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65BDCE471FD007A600ABE87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65BDCE0A1FD005F900ABE87E /* Broccoli */;
+			targetProxy = 65BDCE461FD007A600ABE87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65BDCE201FD0060D00ABE87E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65BDCE211FD0060D00ABE87E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65BDCE251FD0060D00ABE87E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65BDCE261FD0060D00ABE87E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65BDCE111FD005F900ABE87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65BDCE121FD005F900ABE87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65BDCE141FD005F900ABE87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73DV6R4Q82;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Broccoli/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.derekcoder.Broccoli;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65BDCE151FD005F900ABE87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 73DV6R4Q82;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Broccoli/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.derekcoder.Broccoli;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65BDCE2A1FD0060D00ABE87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Broccoli-Demo/Broccoli-Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73DV6R4Q82;
+				INFOPLIST_FILE = "Broccoli-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derekcoder.Broccoli-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65BDCE2B1FD0060D00ABE87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Broccoli-Demo/Broccoli-Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73DV6R4Q82;
+				INFOPLIST_FILE = "Broccoli-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derekcoder.Broccoli-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65BDCE051FD005F900ABE87E /* Build configuration list for PBXProject "Broccoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65BDCE111FD005F900ABE87E /* Debug */,
+				65BDCE121FD005F900ABE87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65BDCE131FD005F900ABE87E /* Build configuration list for PBXNativeTarget "Broccoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65BDCE141FD005F900ABE87E /* Debug */,
+				65BDCE151FD005F900ABE87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65BDCE291FD0060D00ABE87E /* Build configuration list for PBXNativeTarget "Broccoli-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65BDCE2A1FD0060D00ABE87E /* Debug */,
+				65BDCE2B1FD0060D00ABE87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65BDCE3B1FD0079600ABE87E /* BroccoliDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65BDCE3C1FD0079600ABE87E /* BroccoliDemo.xcdatamodel */,
+			);
+			currentVersion = 65BDCE3C1FD0079600ABE87E /* BroccoliDemo.xcdatamodel */;
+			path = BroccoliDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 65BDCE021FD005F900ABE87E /* Project object */;
+}
