@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6504410F1FD1643200E72F1D /* Broccoli.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6504410E1FD1643200E72F1D /* Broccoli.podspec */; };
 		65BDCE101FD005F900ABE87E /* Broccoli.h in Headers */ = {isa = PBXBuildFile; fileRef = 65BDCE0E1FD005F900ABE87E /* Broccoli.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65BDCE1D1FD0060D00ABE87E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE1C1FD0060D00ABE87E /* AppDelegate.swift */; };
 		65BDCE1F1FD0060D00ABE87E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE1E1FD0060D00ABE87E /* ViewController.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6504410E1FD1643200E72F1D /* Broccoli.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Broccoli.podspec; sourceTree = "<group>"; };
 		65BDCE0B1FD005F900ABE87E /* Broccoli.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Broccoli.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BDCE0E1FD005F900ABE87E /* Broccoli.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Broccoli.h; sourceTree = "<group>"; };
 		65BDCE0F1FD005F900ABE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		65BDCE011FD005F900ABE87E = {
 			isa = PBXGroup;
 			children = (
+				6504410E1FD1643200E72F1D /* Broccoli.podspec */,
 				65BDCE0D1FD005F900ABE87E /* Broccoli */,
 				65BDCE1B1FD0060D00ABE87E /* Broccoli-Demo */,
 				65BDCE0C1FD005F900ABE87E /* Products */,
@@ -288,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6504410F1FD1643200E72F1D /* Broccoli.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
