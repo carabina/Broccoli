@@ -14,7 +14,6 @@
 		65BDCE221FD0060D00ABE87E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BDCE201FD0060D00ABE87E /* Main.storyboard */; };
 		65BDCE241FD0060D00ABE87E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BDCE231FD0060D00ABE87E /* Assets.xcassets */; };
 		65BDCE271FD0060D00ABE87E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BDCE251FD0060D00ABE87E /* LaunchScreen.storyboard */; };
-		65BDCE311FD0064400ABE87E /* UserDefaults+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE2D1FD0064400ABE87E /* UserDefaults+Name.swift */; };
 		65BDCE331FD0064400ABE87E /* CKRecordConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE2F1FD0064400ABE87E /* CKRecordConvertible.swift */; };
 		65BDCE341FD0064400ABE87E /* SyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE301FD0064400ABE87E /* SyncEngine.swift */; };
 		65BDCE371FD0066100ABE87E /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDCE361FD0066000ABE87E /* GoalsViewController.swift */; };
@@ -65,7 +64,6 @@
 		65BDCE231FD0060D00ABE87E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65BDCE261FD0060D00ABE87E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65BDCE281FD0060D00ABE87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65BDCE2D1FD0064400ABE87E /* UserDefaults+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Name.swift"; sourceTree = "<group>"; };
 		65BDCE2F1FD0064400ABE87E /* CKRecordConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKRecordConvertible.swift; sourceTree = "<group>"; };
 		65BDCE301FD0064400ABE87E /* SyncEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncEngine.swift; sourceTree = "<group>"; };
 		65BDCE361FD0066000ABE87E /* GoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				65BDCE381FD006D600ABE87E /* Broccoli.swift */,
 				65BDCE301FD0064400ABE87E /* SyncEngine.swift */,
 				65BDCE2F1FD0064400ABE87E /* CKRecordConvertible.swift */,
-				65BDCE2D1FD0064400ABE87E /* UserDefaults+Name.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -314,7 +311,6 @@
 			files = (
 				65BDCE391FD006D600ABE87E /* Broccoli.swift in Sources */,
 				65BDCE331FD0064400ABE87E /* CKRecordConvertible.swift in Sources */,
-				65BDCE311FD0064400ABE87E /* UserDefaults+Name.swift in Sources */,
 				65BDCE341FD0064400ABE87E /* SyncEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

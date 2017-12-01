@@ -16,6 +16,11 @@ public extension Notification.Name {
 
 public struct BroccoliConstants {
     public static let cloudSubscriptionID = "private_changes"
+    
+    static let databaseChangeToken = "databaseChangeToken"
+    static let zoneChangeToken = "zoneChangeToken"
+    static let subscriptionIsCachedLocally = "subscriptionIsCachedLocally"
+    static let isCustomZoneCreated = "isCustomZoneCreated"
 }
 
 public final class SyncEngine<T: NSManagedObject & CKRecordConvertible & CKRecordRecoverable> {
@@ -140,61 +145,54 @@ extension SyncEngine {
     }
 }
 
-extension UserDefaults.Name {
-    static let databaseChangeToken = UserDefaults.Name(rawValue: "databaseChangeToken")
-    static let zoneChangeToken = UserDefaults.Name(rawValue: "zoneChangeToken")
-    static let subscriptionIsCachedLocally = UserDefaults.Name(rawValue: "subscriptionIsCachedLocally")
-    static let isCustomZoneCreated = UserDefaults.Name(rawValue: "isCustomZoneCreated")
-}
-
 // CloudKit API
 extension SyncEngine {
     
     private var databaseChangeToken: CKServerChangeToken? {
         get {
-            guard let tokenData = UserDefaults.standard.object(forName: .databaseChangeToken) as? Data else { return nil }
+            guard let tokenData = UserDefaults.standard.object(forKey: BroccoliConstants.databaseChangeToken) as? Data else { return nil }
             return NSKeyedUnarchiver.unarchiveObject(with: tokenData) as? CKServerChangeToken
         }
         set {
             guard let value = newValue else {
-                UserDefaults.standard.set(nil, forName: .databaseChangeToken)
+                UserDefaults.standard.set(nil, forKey: BroccoliConstants.databaseChangeToken)
                 return
             }
             let data = NSKeyedArchiver.archivedData(withRootObject: value)
-            UserDefaults.standard.set(data, forName: .databaseChangeToken)
+            UserDefaults.standard.set(data, forKey: BroccoliConstants.databaseChangeToken)
         }
     }
     
     private var zoneChangeToken: CKServerChangeToken? {
         get {
-            guard let tokenData = UserDefaults.standard.object(forName: .zoneChangeToken) as? Data else { return nil }
+            guard let tokenData = UserDefaults.standard.object(forKey: BroccoliConstants.zoneChangeToken) as? Data else { return nil }
             return NSKeyedUnarchiver.unarchiveObject(with: tokenData) as? CKServerChangeToken
         }
         set {
             guard let value = newValue else {
-                UserDefaults.standard.set(nil, forName: .zoneChangeToken)
+                UserDefaults.standard.set(nil, forKey: BroccoliConstants.zoneChangeToken)
                 return
             }
             let data = NSKeyedArchiver.archivedData(withRootObject: value)
-            UserDefaults.standard.set(data, forName: .zoneChangeToken)
+            UserDefaults.standard.set(data, forKey: BroccoliConstants.zoneChangeToken)
         }
     }
     
     private var subscriptionIsLocallyCached: Bool {
         get {
-            return UserDefaults.standard.bool(forName: .subscriptionIsCachedLocally)
+            return UserDefaults.standard.bool(forKey: BroccoliConstants.subscriptionIsCachedLocally)
         }
         set {
-            UserDefaults.standard.set(newValue, forName: .subscriptionIsCachedLocally)
+            UserDefaults.standard.set(newValue, forKey: BroccoliConstants.subscriptionIsCachedLocally)
         }
     }
     
     var isCustomZoneCreated: Bool {
         get {
-            return UserDefaults.standard.bool(forName: .isCustomZoneCreated)
+            return UserDefaults.standard.bool(forKey: BroccoliConstants.isCustomZoneCreated)
         }
         set {
-            UserDefaults.standard.set(newValue, forName: .isCustomZoneCreated)
+            UserDefaults.standard.set(newValue, forKey: BroccoliConstants.isCustomZoneCreated)
         }
     }
     
